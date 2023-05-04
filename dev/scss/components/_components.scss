@@ -1,0 +1,196 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixin";
+@use "../vendors/media-queries";
+
+//Navbar
+.container-navbar {
+  margin: auto;
+}
+
+.navbar {
+  background-image: url("../imgs/madera7.jpg ");
+
+  //background-repeat: no-repeat;
+  margin-bottom: 10rem;
+}
+
+.nav-link {
+  @include mixin.set-font(
+    vars.$ff-Stoke,
+    vars.$fw-reg,
+    vars.$fs-xss,
+    vars.$clr-white,
+    100%
+  );
+}
+
+.nav-link:hover {
+  @include mixin.set-font(
+    vars.$ff-Stoke,
+    vars.$fw-reg,
+    vars.$fs-xss,
+    vars.$clr-green,
+    90%
+  );
+}
+
+.form-control {
+  @include mixin.set-forms(vars.$clr-white, vars.$clr-white, vars.$clr-border);
+}
+//fin navbar
+
+//Dropdown
+.dropdown-menu {
+  background-image: url("../imgs/madera7.jpg");
+}
+
+.dropdown-item {
+  @include mixin.set-font(
+    vars.$ff-Stoke,
+    vars.$fw-reg,
+    vars.$fs-base,
+    vars.$clr-white,
+    100%
+  );
+}
+
+//Fin dropdown
+
+//Cards
+.card {
+  @include mixin.card(
+    15rem,
+    22rem,
+    auto,
+    5rem,
+    linear-gradient(to right, #7c5000, #7c5000,#af6901e5),
+    vars.$clr-white
+  );
+  box-shadow: 0px 0px 20px black;
+
+
+}
+
+.section-card {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+
+  @include media-queries.respond-to(media-queries.$tablet-landscape){
+    grid-template-columns: 1fr 1fr;
+}
+
+@include media-queries.respond-to(media-queries.$large-desktop){
+  grid-template-columns: 1fr ;
+}
+
+}
+
+.img-card {
+  max-width: 20%;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: 200px;
+}
+
+.text-card-container {
+  width: 300px;
+  height: 100px;
+  margin: auto;
+}
+
+.a-card {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.a-card:hover {
+  text-decoration: none;
+  color: #ffff;
+  opacity: 80%;
+}
+
+.btn-cards {
+  @include mixin.margin-item(2rem 0rem 0rem 0rem);
+  width: 55px;
+  height: 40px;
+}
+
+.img-btn{
+  width: 90%;
+}
+//Fin Cards
+
+//Coursel
+.carousel {
+  width: 100%;
+  margin: auto;
+  box-shadow: 0px 0px 100px black;
+}
+
+.container-corusel {
+  width: 1000px;
+  height: 1000px;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+  margin: auto;
+
+
+  @include media-queries.respond-to(media-queries.$tablet-landscape){
+    width: 700px;
+    height: 700px;
+  }
+
+  @include media-queries.respond-to(media-queries.$large-desktop){
+    width: 300px;
+    height: 300px;
+  }
+}
+//fin carrusel
+
+//Modal
+.modal-content {
+  background-image: url("../imgs/madera7.jpg");
+  font-family: "Stoke";
+  color: #ffff;
+  margin: auto;
+}
+//fin modal
+
+//forms
+.form-conf{
+  @include mixin.set-font(
+    vars.$ff-Stoke,
+    vars.$fw-reg,
+    vars.$fs-xss,
+    vars.$clr-white,
+    100%
+  );
+  padding: 0rem 40rem 2rem 40rem;
+
+  @include media-queries.respond-to(media-queries.$phone
+  ){
+    padding: 0rem 5rem 2rem 5rem;
+    }
+
+  @include media-queries.respond-to(media-queries.$tablet-landscape){
+  padding: 0rem 15rem 12rem 15rem;
+  }
+
+  @include media-queries.respond-to(media-queries.$large-desktop){
+    padding: 0rem 5rem 7rem 5rem;
+  }
+
+}
+//fin forms
+
+//Container
+.container {
+  margin: auto;
+  padding: 1rem;
+}
+//fin container

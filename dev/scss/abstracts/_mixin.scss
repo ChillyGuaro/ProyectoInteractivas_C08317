@@ -1,0 +1,65 @@
+@use "./vars";
+
+
+//Poner fondo colores
+@mixin set-bg($bgclr) {
+  background-color: $bgclr;
+}
+//fin poner fondos
+
+//Poner imagenes
+@mixin set-img($Iopacity, $Iwidth, $Iposition, $Imargin) {
+  opacity: $Iopacity;
+  width: $Iwidth;
+  position: $Iposition;
+  margin: $Imargin;
+}
+//Fin poner imagenes
+
+//Asignar imagen como fondo
+@mixin set-bg-img($bgimg) {
+  background-image: $bgimg;
+}
+//Fin de asignar imagen como fondo
+
+//Poner ajustes de los forms
+@mixin set-forms($bgclr, $textclr, $bordertype) {
+  background-color: $bgclr;
+  color: $textclr;
+  border-color: $bordertype;
+}
+//fon de Poner ajustes de forms
+
+//Poner margenes
+@mixin margin-item($Tmarging) {
+  margin: $Tmarging;
+}
+//fin poner margenes
+
+//Configuracion del texto
+@mixin set-font($ffamily, $fweight, $fsize, $fcolor, $fopacity) {
+  font-family: $ffamily;
+  font-weight: $fweight;
+  font-size: $fsize;
+  color: $fcolor;
+  opacity: $fopacity;
+}
+// fin de la configuracion del texto
+
+//Configurar las cards
+@mixin card($Cwidth, $Cheight, $Cmargin, $Cmarginb, $Cbg, $Ccolor) {
+  width: $Cwidth;
+  height: $Cheight;
+  margin: $Cmargin;
+  margin-bottom: $Cmarginb;
+  background: $Cbg;
+  color: $Ccolor;
+}
+//Fin de la configuracion de las cards
+
+//Configuracion de los modals
+@mixin modal($Mimg, $Mmargin) {
+  background: $Mimg;
+  margin: $Mmargin;
+}
+//Fin de la configuracion de los modals

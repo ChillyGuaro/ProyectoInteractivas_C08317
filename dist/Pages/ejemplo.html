@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stoke:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Proyecto</title>
+</head>
+
+<body class="body-comidas">
+    <!-- Header -->
+    <section class="container-navbar">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <img src="../imgs/Logo.png" class="logo-img"></img>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link me-3" href="./index.html">Principal</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./selecciones.html">Favoritos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Bebidas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Entradas</a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Desayunos</a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Almuerzo</a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Postres</a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sopas</a></li>
+                                <li>
+                            </ul>
+                            <!-- Fin del dropdown -->
+                            <!-- Dropdown -->
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Festividades
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Todas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cumpleaños</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Día del padre</a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Día del niño</a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Navidad</a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Semana Santa</a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Verano</a></li>
+                                <li>
+                            </ul>
+                            <!-- Fin del dropdown -->
+                            <!-- Dropdown -->
+                        <li class="nav-item dropdown me-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dificultad
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Facil</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Intermedio</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Dificil</a></li>
+                                <li>
+                            </ul>
+                            <!-- Fin del dropdown -->
+                    </ul>
+                    <form class="d-flex" role="Buscar">
+                        <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn btn-success me-5" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <!-- Modal -->
+                <button type="button" class="btn btn-success me-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Ingresar
+                </button>
+                <div class="modal" id="exampleModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content modal-sm">
+                            <div class="modal-body">
+                                <form>
+                                    <div class="centrar-img">
+                                        <img class="logo-img-modal" src="../imgs/Logo.png" alt="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1"
+                                            class="form-label justify-content-start">Nombre de
+                                            usuario:</label>
+                                        <input type="username" class="form-control" id="exampleInputUsername1" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1"
+                                            class="form-label justify-content-start">Contraseña:</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                                    </div>
+                                    <div>
+                                        <a href="./recoverPW.html">¿Olvidó su contraseña?</a>
+                                    </div>
+                                    <button type="submit" class="btn btn-success my-5">
+                                        Ingresar
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin del Modal -->
+                <!-- Modal -->
+                <button type="button" class="btn btn-success mr-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModa2">
+                    Registrarse
+                </button>
+                <div class="modal" id="exampleModa2">
+                    <div class="modal-dialog">
+                        <div class="modal-content modal-sm">
+                            <div class="modal-body">
+                                <form>
+                                    <div class="centrar-img">
+                                        <img class="logo-img-modal" src="../imgs/Logo.png" alt="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Nombre de
+                                            usuario:</label>
+                                        <input type="username" class="form-control" id="exampleInputUsername1" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Correo:</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                                    </div>
+                                    <div id="passwordHelp" class="form-text">
+                                        <p class="p-modal"> La contraseña debe tener de 8-16 caractéres</p>
+                                    </div>
+                                    <button type="submit" class="btn btn-success my-5">
+                                        Registrar
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin del Modal -->
+            </div>
+        </nav>
+    </section>
+    <!-- Fin del header -->
+    <!-- h1 -->
+    <div>
+        <h1 class="subtitles3">Huevos rancheros</h1>
+        <!-- img -->
+        <div class="centrar-img">
+            <img class="img-comidas" src="../imgs/huevos.jpg" alt="">
+        </div>
+        <!-- fin img -->
+        <p class="p-comidas container-text">
+
+            Descripción: Los huevos rancheros son un desayuno tradicional mexicano, consistente en tortillas de maíz
+            cubiertas con huevos fritos y una salsa picante de tomate. Se suele servir con frijoles refritos y aguacate.
+            <br> <br>
+            Tiempo de preparación: 10 minutos <br>
+
+            Tiempo de cocción: 20 minutos <br>
+
+            Tiempo total: 30 minutos <br>
+
+            Porciones: 2 <br>
+
+            Nivel de complejidad: Fácil <br>
+
+            <br>
+            Lista de ingredientes:
+            <br>
+            4 tortillas de maíz <br>
+            4 huevos <br>
+            1 taza de salsa de tomate picante <br>
+            Aceite vegetal <br>
+            Sal y pimienta al gusto <br>
+            Cilantro fresco picado (opcional) <br>
+            Frijoles refritos (para acompañar) <br>
+            Aguacate en rebanadas (para acompañar) <br> <br>
+            Instrucciones para la preparación: <br><br>
+
+            Calienta una sartén grande a fuego medio y agrega un poco de aceite vegetal.
+
+            Agrega las tortillas de maíz y fríelas por ambos lados hasta que estén doradas y crujientes.
+
+            Calienta la salsa de tomate picante en una cacerola pequeña a fuego medio.
+
+            En otra sartén, fríe los huevos a tu gusto (sugerimos huevos fritos).
+
+            Una vez que las tortillas estén listas, coloca una sobre cada plato.
+
+            Agrega un huevo frito sobre cada tortilla.
+
+            Cubre los huevos y las tortillas con la salsa de tomate picante.
+
+            Agrega sal y pimienta al gusto y decora con cilantro picado (opcional).
+
+            Sirve con frijoles refritos y rebanadas de aguacate.
+        </p>
+    </div>
+    <!-- footer -->
+    <footer>
+        <img class="footer-icons" src="../imgs/Face.png" alt="">
+        <img class="footer-icons" src="../imgs/Insta.png" alt="">
+        <img class="footer-icons" src="../imgs/Twitt.png" alt="">
+        <img class="footer-icons" src="../imgs/Whats.png" alt="">
+    </footer>
+    <!-- fin footer -->
+</body>
+
+</html>
