@@ -7,11 +7,7 @@
   @include mixin.set-img(100%, 15%, relative, 0rem 5rem 0rem 2rem);
 
   @include media-queries.respond-to(media-queries.$tablet-landscape){
-    @include mixin.set-img(100%, 70%, relative, 0rem 5rem 0rem 2rem);
-  }
-
-  @include media-queries.respond-to(media-queries.$large-desktop){
-    @include mixin.set-img(100%, 50%, relative, 0rem 5rem 2rem 2rem);
+    @include mixin.set-img(100%, 40%, relative, 0rem 0rem 2rem 0rem);
   }
 }
 
@@ -28,13 +24,16 @@
   @include mixin.set-img(100%, 800px, relative, 0rem 0rem 2em 0rem);
   border-radius: 30px;
   box-shadow: 0px 0px 40px black;
+
+  @include media-queries.respond-to(media-queries.$tablet-landscape){
+    @include mixin.set-img(100%, 70%, relative, 0rem 0rem 2rem 0rem);
+  }
 }
 
 .centrar-img {
   display: flex;
   justify-content: center;
 }
-
 //fin imagenes
 
 //Body
@@ -53,7 +52,6 @@
   padding: 0;
   margin-bottom: 70px;
 }
-
 //fin body
 
 //P configs
@@ -68,10 +66,18 @@
 .p-comidas {
   @include mixin.set-font(vars.$ff-Stoke,
     vars.$fw-reg,
-    vars.$fs-base-xs,
+    vars.$fs-base,
     vars.$clr-gray,
     100%);
   text-align: justify;
+
+  @include media-queries.respond-to(media-queries.$tablet-landscape){
+    @include mixin.set-font(vars.$ff-Stoke,
+    vars.$fw-reg,
+    vars.$fs-base,
+    vars.$clr-gray,
+    100%);
+  }
 }
 //Fin Pconfigs
 
@@ -87,7 +93,23 @@
   margin-bottom: 5rem;
   margin-top: 5rem;
   box-shadow: 0px 0px 60px black;
+
+  @include media-queries.respond-to(media-queries.$tablet-landscape){
+    width: 450px;
+    height: 1200px;
+    background: url("../imgs/madera7.jpg");
+    background-size: cover;
+    padding: 4rem;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    box-shadow: 0px 0px 60px black;
+  }
+  
 }
+
+
 
 .new-margin {
   @include mixin.margin-item(0rem 0rem 0rem 18rem);
@@ -103,6 +125,8 @@
 
 .subtitles3 {
   @include mixin.margin-item(0.2rem 0rem 10rem 0rem);
+
+  
 }
 //fin texto
 
@@ -124,36 +148,5 @@ a {
     vars.$clr-white,
     100%);
   text-decoration: none;
-}
-
-footer {
-  margin: auto;
-  background-image: url("../imgs/madera7.jpg");
-  background-size: cover;
-  bottom: 0;
-  width: 100%;
-  height: 90px;
-
-
-  @include media-queries.respond-to(media-queries.$tablet-landscape) {
-    height: 80px;
-  }
-
-  @include media-queries.respond-to(media-queries.$large-desktop) {
-    height: 90px;
-  }
-
-}
-
-.footer-icons {
-  @include mixin.set-img(100%, 3%, relative, 1rem 2rem 1rem 2rem);
-
-  @include media-queries.respond-to(media-queries.$tablet-landscape) {
-    @include mixin.set-img(100%, 6%, relative, 1rem 1rem 0rem 1rem);
-  }
-
-  @include media-queries.respond-to(media-queries.$large-desktop) {
-    @include mixin.set-img(100%, 6.5%, relative, 2rem 1rem 0rem 1rem);
-  }
 }
 // fin configs

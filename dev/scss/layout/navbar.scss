@@ -1,0 +1,40 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixin";
+@use "../vendors/media-queries";
+
+.container-navbar {
+    margin: auto;
+}
+
+.navbar {
+    background-image: url("../imgs/madera7.jpg ");
+    margin-bottom: 10rem;
+    width: 100%
+}
+
+.nav-link {
+    @include mixin.set-font(vars.$ff-Stoke,
+        vars.$fw-reg,
+        vars.$fs-xss,
+        vars.$clr-white,
+        100%);
+}
+
+.nav-link:hover {
+    @include mixin.set-font(vars.$ff-Stoke,
+        vars.$fw-reg,
+        vars.$fs-xss,
+        vars.$clr-green,
+        90%);
+}
+
+@include media-queries.respond-to(media-queries.$tablet-landscape){
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+.form-control {
+    @include mixin.set-forms(vars.$clr-white, vars.$clr-white, vars.$clr-border);
+}

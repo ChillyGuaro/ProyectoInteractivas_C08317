@@ -1,32 +1,168 @@
-.container-navbar {
-  margin: auto;
+.logo-img {
+  opacity: 100%;
+  width: 15%;
+  position: relative;
+  margin: 0rem 5rem 0rem 2rem;
+}
+@media only screen and (max-width: 1490px) {
+  .logo-img {
+    opacity: 100%;
+    width: 40%;
+    position: relative;
+    margin: 0rem 0rem 2rem 0rem;
+  }
 }
 
-.navbar {
-  background-image: url("../imgs/madera7.jpg ");
-  margin-bottom: 10rem;
+.logo-img-pw {
+  opacity: 100%;
+  width: 30%;
+  position: relative;
+  margin: 0rem 0rem 5rem 0rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.nav-link {
+.logo-img-modal {
+  opacity: 100%;
+  width: 30%;
+  position: relative;
+  margin: 0rem 0rem 3rem 0rem;
+}
+
+.img-comidas {
+  opacity: 100%;
+  width: 800px;
+  position: relative;
+  margin: 0rem 0rem 2em 0rem;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 40px black;
+          box-shadow: 0px 0px 40px black;
+}
+@media only screen and (max-width: 1490px) {
+  .img-comidas {
+    opacity: 100%;
+    width: 70%;
+    position: relative;
+    margin: 0rem 0rem 2rem 0rem;
+  }
+}
+
+.centrar-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body-principal {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(122, 74, 33)), color-stop(rgb(175, 110, 53)), color-stop(rgb(216, 141, 75)), color-stop(rgb(175, 110, 53)), to(rgb(122, 74, 33)));
+  background: linear-gradient(to right, rgb(122, 74, 33), rgb(175, 110, 53), rgb(216, 141, 75), rgb(175, 110, 53), rgb(122, 74, 33));
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+.body-comidas {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(122, 74, 33)), color-stop(rgb(199, 128, 66)), to(rgb(116, 66, 23)));
+  background: linear-gradient(to right, rgb(122, 74, 33), rgb(199, 128, 66), rgb(116, 66, 23));
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+.p-modal {
   font-family: "Stoke";
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #ffffff;
   opacity: 100%;
 }
 
-.nav-link:hover {
+.p-comidas {
   font-family: "Stoke";
   font-weight: 300;
-  font-size: 1.5rem;
-  color: #009311;
-  opacity: 90%;
+  font-size: 1rem;
+  color: #f8f8f8;
+  opacity: 100%;
+  text-align: justify;
+}
+@media only screen and (max-width: 1490px) {
+  .p-comidas {
+    font-family: "Stoke";
+    font-weight: 300;
+    font-size: 1rem;
+    color: #f8f8f8;
+    opacity: 100%;
+  }
 }
 
-.form-control {
-  background-color: #ffffff;
+.container-text {
+  width: 1000px;
+  height: 950px;
+  background: url("../imgs/madera7.jpg");
+  background-size: cover;
+  padding: 4rem;
+  border-radius: 30px;
+  margin: auto;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  -webkit-box-shadow: 0px 0px 60px black;
+          box-shadow: 0px 0px 60px black;
+}
+@media only screen and (max-width: 1490px) {
+  .container-text {
+    width: 450px;
+    height: 1200px;
+    background: url("../imgs/madera7.jpg");
+    background-size: cover;
+    padding: 4rem;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    -webkit-box-shadow: 0px 0px 60px black;
+            box-shadow: 0px 0px 60px black;
+  }
+}
+
+.new-margin {
+  margin: 0rem 0rem 0rem 18rem;
+}
+
+.subtitles1 {
+  margin: 1.5rem 0rem 0.6rem 0rem;
+}
+
+.subtitles2 {
+  margin: 1rem 0rem 10rem 0rem;
+}
+
+.subtitles3 {
+  margin: 0.2rem 0rem 10rem 0rem;
+}
+
+h1 {
+  font-family: "Stoke";
+  font-weight: 300;
+  font-size: 4.188rem;
   color: #ffffff;
-  border-color: rgb(92, 44, 2);
+  opacity: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+a {
+  font-family: "Stoke";
+  font-weight: 300;
+  font-size: 1rem;
+  color: #ffffff;
+  opacity: 100%;
+  text-decoration: none;
 }
 
 .dropdown-menu {
@@ -60,13 +196,31 @@
   -ms-grid-columns: 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (max-width: 1490px) {
+  .section-card {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 1200px) {
   .section-card {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (max-width: 900px) {
+  .section-card {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-card {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 460px) {
   .section-card {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -126,13 +280,19 @@
   grid-template-columns: 1fr;
   margin: auto;
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (max-width: 1200px) {
   .container-corusel {
     width: 700px;
     height: 700px;
   }
 }
 @media only screen and (max-width: 900px) {
+  .container-corusel {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 460px) {
   .container-corusel {
     width: 300px;
     height: 300px;
@@ -154,12 +314,7 @@
   opacity: 100%;
   padding: 0rem 40rem 2rem 40rem;
 }
-@media only screen and (min-width: 460px) {
-  .form-conf {
-    padding: 0rem 5rem 2rem 5rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (max-width: 1490px) {
   .form-conf {
     padding: 0rem 15rem 12rem 15rem;
   }
@@ -169,155 +324,22 @@
     padding: 0rem 5rem 7rem 5rem;
   }
 }
+@media only screen and (max-width: 460px) {
+  .form-conf {
+    padding: 0rem 5rem 2rem 5rem;
+  }
+}
 
 .container {
   margin: auto;
   padding: 1rem;
 }
 
-.logo-img {
-  opacity: 100%;
-  width: 15%;
-  position: relative;
-  margin: 0rem 5rem 0rem 2rem;
-}
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-  .logo-img {
-    opacity: 100%;
-    width: 70%;
-    position: relative;
-    margin: 0rem 5rem 0rem 2rem;
+@media only screen and (max-width: 1490px) {
+  .btn-forms {
+    margin: 2rem 0rem 0rem 0rem;
   }
 }
-@media only screen and (max-width: 900px) {
-  .logo-img {
-    opacity: 100%;
-    width: 50%;
-    position: relative;
-    margin: 0rem 5rem 2rem 2rem;
-  }
-}
-
-.logo-img-pw {
-  opacity: 100%;
-  width: 30%;
-  position: relative;
-  margin: 0rem 0rem 5rem 0rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.logo-img-modal {
-  opacity: 100%;
-  width: 30%;
-  position: relative;
-  margin: 0rem 0rem 3rem 0rem;
-}
-
-.img-comidas {
-  opacity: 100%;
-  width: 800px;
-  position: relative;
-  margin: 0rem 0rem 2em 0rem;
-  border-radius: 30px;
-  -webkit-box-shadow: 0px 0px 40px black;
-          box-shadow: 0px 0px 40px black;
-}
-
-.centrar-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.body-principal {
-  background: -webkit-gradient(linear, left top, right top, from(rgb(122, 74, 33)), color-stop(rgb(175, 110, 53)), color-stop(rgb(216, 141, 75)), color-stop(rgb(175, 110, 53)), to(rgb(122, 74, 33)));
-  background: linear-gradient(to right, rgb(122, 74, 33), rgb(175, 110, 53), rgb(216, 141, 75), rgb(175, 110, 53), rgb(122, 74, 33));
-  margin: 0;
-  height: 100vh;
-  padding: 0;
-  margin-bottom: 70px;
-}
-
-.body-comidas {
-  background: -webkit-gradient(linear, left top, right top, from(rgb(122, 74, 33)), color-stop(rgb(199, 128, 66)), to(rgb(116, 66, 23)));
-  background: linear-gradient(to right, rgb(122, 74, 33), rgb(199, 128, 66), rgb(116, 66, 23));
-  margin: 0;
-  height: 100vh;
-  padding: 0;
-  margin-bottom: 70px;
-}
-
-.p-modal {
-  font-family: "Stoke";
-  font-weight: 300;
-  font-size: 1rem;
-  color: #ffffff;
-  opacity: 100%;
-}
-
-.p-comidas {
-  font-family: "Stoke";
-  font-weight: 300;
-  font-size: 1.1rem;
-  color: #f8f8f8;
-  opacity: 100%;
-  text-align: justify;
-}
-
-.container-text {
-  width: 1000px;
-  height: 950px;
-  background: url("../imgs/madera7.jpg");
-  background-size: cover;
-  padding: 4rem;
-  border-radius: 30px;
-  margin: auto;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
-  -webkit-box-shadow: 0px 0px 60px black;
-          box-shadow: 0px 0px 60px black;
-}
-
-.new-margin {
-  margin: 0rem 0rem 0rem 18rem;
-}
-
-.subtitles1 {
-  margin: 1.5rem 0rem 0.6rem 0rem;
-}
-
-.subtitles2 {
-  margin: 1rem 0rem 10rem 0rem;
-}
-
-.subtitles3 {
-  margin: 0.2rem 0rem 10rem 0rem;
-}
-
-h1 {
-  font-family: "Stoke";
-  font-weight: 300;
-  font-size: 4.188rem;
-  color: #ffffff;
-  opacity: 100%;
-  text-align: center;
-  margin: auto;
-}
-
-a {
-  font-family: "Stoke";
-  font-weight: 300;
-  font-size: 1rem;
-  color: #ffffff;
-  opacity: 100%;
-  text-decoration: none;
-}
-
 footer {
   margin: auto;
   background-image: url("../imgs/madera7.jpg");
@@ -326,24 +348,22 @@ footer {
   width: 100%;
   height: 90px;
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-  footer {
-    height: 80px;
-  }
-}
-@media only screen and (max-width: 900px) {
-  footer {
-    height: 90px;
-  }
-}
 
 .footer-icons {
   opacity: 100%;
-  width: 3%;
+  width: 2.5%;
   position: relative;
   margin: 1rem 2rem 1rem 2rem;
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (max-width: 1490px) {
+  .footer-icons {
+    opacity: 100%;
+    width: 5%;
+    position: relative;
+    margin: 1rem 1rem 0rem 1rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
   .footer-icons {
     opacity: 100%;
     width: 6%;
@@ -354,8 +374,59 @@ footer {
 @media only screen and (max-width: 900px) {
   .footer-icons {
     opacity: 100%;
-    width: 6.5%;
+    width: 8%;
     position: relative;
-    margin: 2rem 1rem 0rem 1rem;
+    margin: 1rem 1rem 0rem 1rem;
   }
+}
+@media only screen and (max-width: 460px) {
+  .footer-icons {
+    opacity: 100%;
+    width: 8%;
+    position: relative;
+    margin: 1rem 1rem 0rem 1rem;
+  }
+}
+
+.container-navbar {
+  margin: auto;
+}
+
+.navbar {
+  background-image: url("../imgs/madera7.jpg ");
+  margin-bottom: 10rem;
+  width: 100%;
+}
+
+.nav-link {
+  font-family: "Stoke";
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #ffffff;
+  opacity: 100%;
+}
+
+.nav-link:hover {
+  font-family: "Stoke";
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #009311;
+  opacity: 90%;
+}
+
+@media only screen and (max-width: 1490px) {
+  .navegacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.form-control {
+  background-color: #ffffff;
+  color: #ffffff;
+  border-color: rgb(92, 44, 2);
 }

@@ -3,40 +3,7 @@
 @use "../vendors/media-queries";
 
 //Navbar
-.container-navbar {
-  margin: auto;
-}
 
-.navbar {
-  background-image: url("../imgs/madera7.jpg ");
-
-  //background-repeat: no-repeat;
-  margin-bottom: 10rem;
-}
-
-.nav-link {
-  @include mixin.set-font(
-    vars.$ff-Stoke,
-    vars.$fw-reg,
-    vars.$fs-xss,
-    vars.$clr-white,
-    100%
-  );
-}
-
-.nav-link:hover {
-  @include mixin.set-font(
-    vars.$ff-Stoke,
-    vars.$fw-reg,
-    vars.$fs-xss,
-    vars.$clr-green,
-    90%
-  );
-}
-
-.form-control {
-  @include mixin.set-forms(vars.$clr-white, vars.$clr-white, vars.$clr-border);
-}
 //fin navbar
 
 //Dropdown
@@ -45,27 +12,23 @@
 }
 
 .dropdown-item {
-  @include mixin.set-font(
-    vars.$ff-Stoke,
+  @include mixin.set-font(vars.$ff-Stoke,
     vars.$fw-reg,
     vars.$fs-base,
     vars.$clr-white,
-    100%
-  );
+    100%);
 }
 
 //Fin dropdown
 
 //Cards
 .card {
-  @include mixin.card(
-    15rem,
+  @include mixin.card(15rem,
     22rem,
     auto,
     5rem,
-    linear-gradient(to right, #7c5000, #7c5000,#af6901e5),
-    vars.$clr-white
-  );
+    linear-gradient(to right, #7c5000, #7c5000, #af6901e5),
+    vars.$clr-white );
   box-shadow: 0px 0px 20px black;
 
 
@@ -77,13 +40,25 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
 
-  @include media-queries.respond-to(media-queries.$tablet-landscape){
-    grid-template-columns: 1fr 1fr;
-}
+  @include media-queries.respond-to(media-queries.$tablet-landscape) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-@include media-queries.respond-to(media-queries.$large-desktop){
-  grid-template-columns: 1fr ;
-}
+  @include media-queries.respond-to(media-queries.$desktop) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-queries.respond-to(media-queries.$large-desktop) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-queries.respond-to(media-queries.$tablet-portrait) {
+    grid-template-columns: 1fr;
+  }
+
+  @include media-queries.respond-to(media-queries.$phone) {
+    grid-template-columns: 1fr;
+  }
 
 }
 
@@ -119,9 +94,10 @@
   height: 40px;
 }
 
-.img-btn{
+.img-btn {
   width: 90%;
 }
+
 //Fin Cards
 
 //Coursel
@@ -140,16 +116,24 @@
   margin: auto;
 
 
-  @include media-queries.respond-to(media-queries.$tablet-landscape){
+  @include media-queries.respond-to(media-queries.$desktop) {
     width: 700px;
     height: 700px;
   }
 
-  @include media-queries.respond-to(media-queries.$large-desktop){
+  @include media-queries.respond-to(media-queries.$large-desktop) {
+    width: 400px;
+    height: 400px;
+  }
+
+  @include media-queries.respond-to(media-queries.$phone) {
     width: 300px;
     height: 300px;
   }
+
+
 }
+
 //fin carrusel
 
 //Modal
@@ -159,33 +143,33 @@
   color: #ffff;
   margin: auto;
 }
+
 //fin modal
 
 //forms
-.form-conf{
-  @include mixin.set-font(
-    vars.$ff-Stoke,
+.form-conf {
+  @include mixin.set-font(vars.$ff-Stoke,
     vars.$fw-reg,
     vars.$fs-xss,
     vars.$clr-white,
-    100%
-  );
+    100%);
   padding: 0rem 40rem 2rem 40rem;
 
-  @include media-queries.respond-to(media-queries.$phone
-  ){
-    padding: 0rem 5rem 2rem 5rem;
-    }
 
-  @include media-queries.respond-to(media-queries.$tablet-landscape){
-  padding: 0rem 15rem 12rem 15rem;
+  @include media-queries.respond-to(media-queries.$tablet-landscape) {
+    padding: 0rem 15rem 12rem 15rem;
   }
 
-  @include media-queries.respond-to(media-queries.$large-desktop){
+  @include media-queries.respond-to(media-queries.$large-desktop) {
     padding: 0rem 5rem 7rem 5rem;
   }
 
+  @include media-queries.respond-to(media-queries.$phone ) {
+    padding: 0rem 5rem 2rem 5rem;
+  }
+
 }
+
 //fin forms
 
 //Container
@@ -193,4 +177,14 @@
   margin: auto;
   padding: 1rem;
 }
+
 //fin container
+
+//Botones
+@include media-queries.respond-to(media-queries.$tablet-landscape) {
+  .btn-forms {
+    margin: 2rem 0rem 0rem 0rem;
+  }
+}
+
+//Fin botones
